@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribuições / builds
+build/
+dist/
+*.egg-info/
+
+# Logs e caches
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.coverage
+.cache
+.pytest_cache/
+
+# Ambiente virtual
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pygame Community Edition
+pygame.log
+
+# Editores IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
