@@ -16,6 +16,7 @@ Golems Ascendancy é um jogo de estratégia em tempo real com mecânicas *idle*,
 
 ```bash
 pip install pygame-ce
+```
 
 ## Execução
 
