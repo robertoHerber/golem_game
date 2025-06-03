@@ -1,100 +1,300 @@
 from enum import Enum
 
 class Name(Enum):
-    # GOLEMS
-    # WATER_GOLEM = "water_golem"
-    # SANDSTONE_GOLEM = "sandstone_golem"
-    # TIN_GOLEM = "tin_golem"
-    # STONE_GOLEM = "stone_golem"
-    # COPPER_GOLEM = "copper_golem"
-    # GRANITE_GOLEM = "granite_golem"
-    # MUD_GOLEM = "mud_golem"
-    # LIMESTONE_GOLEM = "limestone_golem"
-
-    # BUTTONS
-    MAKE_STATUE = "make statue"
-    DISCOVER_KNOWLEDGE = "discover knowledge"
+    # UI
+    MAKE_STATUE = "Make Statue"
+    DISCOVER_KNOWLEDGE = "Discover"
 
     # ATRIBUTES
-    CHAOS = "chaos"
-    CREATIVITY = "creativity"
-    JUSTICE = "justice"
-    HEALTH = "health"
-    MAGIC = "magic"
-    COURAGE = "courage"
-    DOMINANCE = "dominance"
-    HAPPINESS = "happiness"
+    CHAOS = "Chaos"
+    CREATIVITY = "Creativity"
+    HEALTH = "Health"
+    MAGIC = "Magic"
+    COURAGE = "Courage"
 
     # RESOURCES
-    MUD = "mud"
-    WOOD = "wood"
-    WATER = "water"
-    STONE = "stone"
-    SANDSTONE = "sandstone"
-    GRANITE = "granite"
-    LIMESTONE = "limestone"
-    TIN = "tin"
-    COPPER = "copper"
-
-    BRONZE = "bronze"
-
-    IRON = "iron"
-    COAL = "coal"
-    GOLD = "gold"
-    PLATINUM = "platinum"
-    CHROME = "chrome"
-    ALUMINIUM = "aluminium"
-    TITANIUM = "titanium"
-    URANIUM = "uranium"
-    NICKEL = "nickel"
-
-    FLINT = "flint"
-    MEAT = "meat"
-    HIDE = "hide"
-    CLAY = "clay"
-    CHARCOAL = "charcoal"
-    STONE_TOOLS = "stone tools"
-    POTTERY = "pottery"
-    LOG = "log"
-    ROPE = "rope"
-    DRIED_MEAT = "dried meat"
-    PRIMITIVE_FURNACE = "primitive furnace"
-    ASH = "ash"
-    WOODEN_SPEAR = "wooden spear"
-    BOW = "bow"
+    LOG = "Log"
+    WATER = "Water"
+    DIRT = "Dirt"
+    CLAY = "Clay"
+    STONE = "Stone"
+    LIMESTONE = "Limestone"
+    FLINT = "Flint"
+    MALACHITE = "Malachite"
+    LUMBER = "Lumber"
+    CHARCOAL = "Charcoal"
+    PIT = "Pit"
+    HEMP = "Hemp"
+    OLDOWAN = "Oldowan"
+    BAST_FIBER = "Bast fiber"
+    METEORIC_IRON = "Meteoric iron"
+    STONE_ANVIL = "Stone anvil"
+    LIMESTONE_DUST = "Limestone dust"
+    MALACHITE_DUST = "Malachite dust"
+    FIRE = "Fire"
+    THREAD = "Thread"
+    WHEEL = "Wheel"
+    SPINDLE = "Spindle"
+    BOWL = "Bowl"
+    POTTER_WHEEL = "Potter wheel"
+    BRICK_MOLD = "Brick mold"
+    RAW_BRICK = "Raw brick"
+    FIRED_BRICK = "Fired brick"
+    RAW_POTTERY = "Raw pottery"
+    FIRED_POTTERY = "Fired pottery"
+    LIME = "Lime"
+    FABRIC = "Fabric"
+    ROPE = "Rope"
+    BELLOWS = "Bellows"
+    CLOTHES = "Clothes"
+    SAND = "Sand"
+    MORTAR = "Mortar"
+    HOUSE = "House"
+    MEGALITH = "Megalith"
+    COPPER_CHARCOAL_MIX = "Copper-charcoal mix"
+    COPPER = "Copper"
+    OBSERVATORY_1 = "Observatory 1"
 
     # WORKS
-    GATHERER = "gatherer"
-    #ASTRONOMER = "astronomer"
-    LUMBERJACK = "lumberjack"
-    HUNTER = "hunter"
-    FLINT_KNAPPER = "flint knapper"
-    POTTERY_MAKER = "pottery maker"
-    CHARCOAL_MAKER = "charcoal maker"
-    MINER = "miner"
-    TOOL_MAKER = "tool maker"
-    BUILDER = "builder"
-    SPEAR_MAKER = "spear maker"
-    BOWYER = "bowyer"
-    MEAT_DRIER = "meat drier"
-    ROPE_MAKER = "rope maker"
-    FURNACE_OPERATOR = "furnace operator"
+    GATHERER = "Gatherer"
+    CROP_COLECTOR = "Crop colector"
+    FLINT_KNAPPER = "Flint knapper"
+    ARCHEOASTRONOMER = "Archeoastronomer"
+    TREE_FELLER = "Tree feller"
+    WOODWORKER__LUMBER = "Woodworker (Lumber)"
+    WOODWORKER__BOWL = "Woodworker (Bowl)"
+    WOODWORKER__WHEEL = "Woodworker (Wheel)"
+    WOODWORKER__SPINDLE = "Woodworker (Spindle)"
+    WOODWORKER__BRICK_MOLD = "Woodworker (Brick mold)"
+    WOODWORKER__POTTER_WHEEL = "Woodworker (Potter wheel)"
+    FIREKEEPER = "Firekeeper"
+    DIGGER = "Digger"
+    RETTER = "Retter"
+    SURFACE_MINER = "Surface miner"
+    CHARCOAL_BURNER = "Charcoal burner"
+    SPINNER = "Spinner "
+    ANVIL_MAKER = "Anvil maker"
+    CRUSHER__LIMESTONE = "Crusher (Limestone)"
+    CRUSHER__MALACHITE = "Crusher (Malachite)"
+    BRICKMAKER = "Brickmaker"
+    CLAY_FIRER__BRICK = "Clay firer (Brick)"
+    CLAY_FIRER__POTTERY = "Clay firer (Pottery)"
+    CALCINER = "Calciner"
+    WEAVER = "Weaver"
+    ROPE_MAKER = "Rope-maker"
+    POTTER = "Potter"
+    TAILOR__BELLOWS = "Tailor (Bellows)"
+    TAILOR__CLOTHES = "Tailor (Clothes)"
+    CRUSHER__STONE = "Crusher (Stone)"
+    MORTAR_MIXER = "Mortar mixer"
+    COPPER_SMELTER = "Copper smelter"
+    COPPER_WASHER = "Copper washer"
+
+    # MULTIWORKS
+    CHARCOAL_PILE = "Charcoal pile"
+    BUILDING = "Building"
+    MEGALITH_DIGGING = "Megalith digging"
+    OBSERVATORY_BUILDING_1 = "Observatory building 1"
+    ASTRONOMICAL_OBSERVING = "Astronomical observing"
 
     # KNOWLEDGE
-    BASIC_HUNTING = "basic hunting"
-    FLINT_PROCESSING = "flint processing"
-    CLAY_WORKING = "clay working"
-    FIRE_CONTROL = "fire control"
-    BASIC_MINING = "basic mining"
-    BASIC_TOOL_MAKING = "basic tool making"
-    FOOD_PRESERVATION = "food preservation"
-    LEATHER_WORKING = "leather working"
-    SMELTING_PREPARATIONS = "smelting preparations"
-    KILN_CONSTRUCTION = "kiln construction"
-    BRONZE_SMELTING = "bronze smelting"
-    WOOD_CUTTING = "wood cutting"
-    PRIMITIVE_WEAPONS = "primitive weapons"
-    BOW_MAKING = "bow making"
-    ROPE_MAKING = "rope making"
-    DRYING_TECHNIQUES = "drying techniques"
-    FURNACE_BUILDING = "furnace building"
+    CURIOSITY = "Curiosity"
+    PLANT_IDENTIFICATION = "Plant identification"
+    SHARP_IDEA = "Sharp idea"
+    STAR_OBSERVATION = "Star observation"
+    FOREST_SKILLS = "Forest skills"
+    PYROTECHNOLOGY = "Pyrotechnology"
+    EARTHLY_DESIRES = "Earthly desires"
+    ABSTRACT_THOUGHT = "Abstract thought"
+    ROT_AND_ROLL = "Rot & Roll"
+    COOLER_ROCKS = "Cooler rocks!"
+    BLACKEST_WOOD = "Blackest wood"
+    REVOLUTION_REVOLUTION = "Revolution revolution"
+    ATTENTION_YARNING = "Attention: Yarning"
+    TO_BITES_AND_DUST = "To bites & dust"
+    BRICK_BY_BRICK = "Brick by brick"
+    TRIAL_BY_FIRE = "Trial-by-fire"
+    FANCY_TANGLING = "Fancy tangling"
+    NEVER_LOSE_ROPE = "Never lose rope"
+    ARSONISTS_DREAM = "Arsonist's dream"
+    POTTERY_RPM = "Pottery RPM"
+    RAG_TO_RICHES = "Rag to riches"
+    STICKY_GOOP_TECH = "Sticky goop tech"
+    ARCHEO_ARCHITECT = "Archeo architect"
+    MONUMENTAL_AMBITION = "Monumental ambition"
+    CALCOLITHIC_MODE = "Calcolithic mode"
+    THE_BEGGINING = "The Beggining"
+    BRONZE_AGE_BEGGINS = "Bronze Age beggins"
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+
+
+resource = """
+Log
+Water
+Dirt
+Clay
+Stone
+Limestone
+Flint
+Malachite
+Lumber
+Charcoal
+Pit
+Hemp
+Oldowan
+Bast fiber
+Meteoric iron
+Stone anvil
+Limestone dust
+Malachite dust
+Fire
+Thread
+Wheel
+Spindle	Bowl
+Potter wheel
+Brick mold
+Raw brick
+Fired brick
+Raw pottery
+Fired pottery
+Lime
+Fabric
+Rope
+Bellows
+Clothes
+Sand
+Mortar
+Megalith
+Copper-charcoal mix
+Copper
+Observatory 1
+"""
+
+
+
+knowledge = """
+Curiosity
+Plant identification
+Sharp idea
+Star observation
+Forest skills
+Pyrotechnology
+Earthly desires
+Abstract thought
+Rot & Roll
+Cooler rocks!
+Blackest wood
+Revolution revolution
+Attention: Yarning
+To bites & dust
+Brick by brick
+Trial-by-fire
+Fancy tangling
+Never lose rope
+Arsonist's dream
+Pottery RPM
+Rag to riches
+Sticky goop tech
+Archeo architect
+Monumental ambition
+Calcolithic mode
+The Beggining
+Bronze Age beggins
+"""
+
+
+
+works = """
+Gatherer
+Crop colector
+Flint knapper
+Archeoastronomer
+Tree feller
+Woodworker (Lumber)
+Woodworker (Bowl)
+Firekeeper
+Digger
+Retter
+Surface miner
+Charcoal burner
+Woodworker (Wheel)
+Woodworker (Spindle)
+Spinner 
+Anvil maker
+Crusher (Limestone)
+Crusher (Malachite)
+Woodworker (Brick mold)
+Brickmaker
+Clay firer (Brick)
+Calciner
+Weaver
+Rope-maker
+Woodworker (Potter wheel)
+Potter
+Clay firer (Pottery)
+Tailor (Bellows)
+Tailor (Clothes)
+Crusher (Stone)
+Mortar mixer
+Copper smelter
+Copper washer
+
+Charcoal piling
+Building
+Megalith digging
+Observatory building 1
+Astronomical observing
+"""
+
+
+# for i in knowledge.split('\n'):
+#     print(i.upper().replace(" ", "_").replace("(", "_").replace(")", "") )#+ ' = "' + i + '"')
+
+text = """Crop colector
+Flint knapper
+Archeoastronomer
+Tree feller;Woodworker (Lumber);Woodworker (Bowl)
+Firekeeper
+Digger
+~
+Retter
+Surface miner
+Charcoal burner
+Woodworker (Wheel)
+Woodworker (Spindle);Yarn spinner
+Anvil maker;Crusher (Limestone);Crusher (Malachite)
+Woodworker (Brick mold);Brickmaker;Clay firer (Brick)
+Calciner
+Weaver
+Rope-maker
+Charcoal pile builder
+Woodworker (Potter wheel)
+Potter;Clay firer (Pottery)
+Tailor (Bellows);Tailor (Clothes)
+Crusher (Stone)
+Mortar mixer
+Builder
+Megalith digger
+Copper smelter;Copper washer
+Observatory building 1;Astronomical Observatory
+"""
+
+
+b = []
+for row in text.split("\n"):
+    b = []
+    for i in row.split(';'):
+        a = "Name." + i.upper().replace(" (", "__").replace(")", "").replace(" ", "_").replace("-","_")
+        b.append(a)
+
+    print(", ".join(b))
